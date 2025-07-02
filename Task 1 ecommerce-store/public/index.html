@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopNow</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#" id="cart-link">Cart</a>
+            <a href="#" id="login-link">Login</a>
+            <a href="#" id="register-link">Register</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="products-container">
+            <h1>Featured Products</h1>
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0</span></h3>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
